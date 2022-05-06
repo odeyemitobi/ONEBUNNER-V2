@@ -1,0 +1,822 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: white;
+} 
+
+section{
+    padding:0.9%;
+    padding-top: 7.5rem;
+}
+img{
+    display: inline-block;
+    margin: 25px 10px;
+}
+header{
+    position: relative;
+    top: 0; left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0,5rem 1rem rgba(0,0,0,0.1);
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .navbar1 a{
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color: #333333;
+}
+header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color: #333333;
+}
+
+header input{
+    display: none;
+}
+
+header label{
+    font-size: 3rem;
+    color: rgb(80, 0, 132);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgb(80, 0, 132);
+    border-radius: 30px;
+    padding: 12px 34px;
+    font-size: 16px;
+    background: rgb(80, 0, 132);
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,0.1);
+    transition: all .3s linear;
+}
+
+.hero-btn:hover{
+    transform: scale(1.1);
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    background-position: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+.product .lanid img{
+    width: 786px;
+}
+
+.product .trial-book h2{
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 60px;
+    color:  rgb(80, 0, 132);
+}
+
+.product .trial-book p{
+    font-size: 24px;
+    color: #333333;
+    padding: 1rem 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.companies{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.companies p{
+    font-size: 24px;
+    color: #01001D;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+}
+.company-logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    background-position: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.box ul{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    border: 2px solid #454545;
+    border-radius: 10px 0px 0px 10px;
+    padding: 10px 0px;
+    box-shadow: #46268624;
+}
+.herobtn3{
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgb(80, 0, 132);
+    color: white;
+    width: 220px;
+    margin: 20px 0px 20px 0px;
+    padding: 20px 50px 20px 50px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+}
+.box1{
+    background-color: white;
+    font-size: 20px;
+    color: #454545;
+    margin: 20px;
+    padding: 0px
+}
+.manage-team{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    background-position: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.manage-team .activities-pic img{
+    width: 757px;
+}
+.manage-team .team-activities h1{
+    font-size: 40px;
+    color: #333333;
+    font-style: normal;
+    line-height: 48px;
+}
+.manage-team .team-activities p{
+    font-size: 20px;
+    color: rgba(69, 69, 69, 0.8);
+    padding: 1rem 0;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+.frame-place{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    background-position: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.frame-place .frame-pic img{
+    width: 782px;
+}
+.frame-place .team-speed h1{
+    font-size: 40px;
+    color: #333333;
+    font-style: normal;
+    line-height: 48px;
+}
+.frame-place .team-speed p{
+    font-size: 20px;
+    color: rgba(69, 69, 69, 0.8);
+    padding: 1rem 0;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+.autotask{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    background-position: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.autotask .task-pic img{
+    width: 757px;
+}
+.autotask .task-line h1{
+    font-size: 40px;
+    color: #333333;
+    font-style: normal;
+    line-height: 48px;
+}
+.autotask .task-line p{
+    font-size: 20px;
+    color: rgba(69, 69, 69, 0.8);
+    padding: 1rem 0;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+.tools{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.tools h1{
+    font-size: 40px;
+    color: #333333;
+    text-align: center;
+    font-style: normal;
+    line-height: 48px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    background-position: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.report{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    background-position: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.report .report-pic img{
+    width: 725px;
+}
+.report .time-report h1{
+    font-size: 40px;
+    color: #333333;
+    font-style: normal;
+    line-height: 48px;
+}
+.report .time-report p{
+    font-size: 20px;
+    color: rgba(69, 69, 69, 0.8);
+    padding: 1rem 0;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+.management{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    background-position: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.management .img-management img{
+    width: 757px;
+}
+.management .lead-management h1{
+    font-size: 40px;
+    color: #333333;
+    font-style: normal;
+    line-height: 48px;
+}
+.management .lead-management p{
+    font-size: 20px;
+    color: rgba(69, 69, 69, 0.8);
+    padding: 1rem 0;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+.support{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    background-position: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.support .chat img{
+    width: 61px;
+}
+.support .chat p{
+    font-size: 16px;
+    color: rgba(69, 69, 69, 0.8);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+.support .elipse img{
+    width: 392px;
+}
+.support .customer h1{
+    font-size: 40px;
+    color: #333333;
+    font-style: normal;
+    line-height: 48px;
+}
+.support .customer p{
+    font-size: 20px;
+    color: rgba(69, 69, 69, 0.8);
+    padding: 1rem 0;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+.workspace{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background: #7837F8;
+    background-position: center;
+    min-height: 35vh;
+}
+.workspace .work-free h1{
+    font-size: 50px;
+    padding-top: 70px;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+.workspace .work-free p{
+    font-size: 24px;
+    color: white;
+    padding: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+.hero-btn3{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(80, 0, 132);
+    border: 2px solid rgb(80, 0, 132);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 19px 54px;
+    font-size: 18px;
+    background: white;
+    position: relative;
+    cursor: pointer;
+}
+.open{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    background-position: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.open .logo-dwn img{
+    width: 318.48px;
+}
+.footer{
+    padding-top: 3rem;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+}
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer .box-container .solution{
+    flex: 1 1 25rem;
+    margin-left: 6%;
+}
+.footer .box-container .solution h1{
+    font-size: 20px;
+    color: #454545;
+    font-style: normal;
+    line-height: 30px;
+    padding: 1rem 0;
+}
+.footer .box-container .solution p{
+    font-size: 16px;
+    color: rgba(1, 0, 29, 0.6);
+    font-style: normal;
+    line-height: 30px;
+    padding: 1rem 0;
+}
+.footer .box-container .solution .get p{
+    font-size: 16px;
+    color: rgba(1, 0, 29, 0.6);
+    font-style: normal;
+    line-height: 30px;
+    padding-top: 110px;
+}
+.footer .box-container .solution .numb p{
+    font-size: 20px;
+    color: rgba(51, 51, 51, 0.8);
+    font-style: normal;
+    line-height: 30px;
+}
+.footer .box-container .solution .fonts i{
+    width: 42px;
+    font-size: 30px;
+}
+.footer .box-container .product-tag{
+    margin-right: 9%;
+}
+.footer .box-container .product-tag h1{
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 30px;
+    padding: 1rem 0;
+}
+.footer .box-container .product-tag p{
+    font-size: 16px;
+    color: rgba(1, 0, 29, 0.6);
+    font-style: normal;
+    line-height: 30px;
+    padding-top: 10px;
+}
+.footer .box-container .company-tag{
+    margin-right: 8%;
+}
+.footer .box-container .company-tag h1{
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 30px;
+    padding: 1rem 0;
+}
+.footer .box-container .company-tag p{
+    font-size: 16px;
+    color: rgba(1, 0, 29, 0.6);
+    font-style: normal;
+    line-height: 30px;
+    padding-top: 10px;
+}
+.footer .box-container .burner-tag{
+    margin-right: 6%;
+}
+.footer .box-container .burner-tag h1{
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 30px;
+    padding: 1rem 0;
+}
+.footer .box-container .burner-tag p{
+    font-size: 16px;
+    color: rgba(1, 0, 29, 0.6);
+    font-style: normal;
+    line-height: 30px;
+    padding-top: 10px;
+}
+.footer .box-container .resource-tag{
+    margin-right: 5%;
+    left: 1667px;
+}
+.footer .box-container .resource-tag h1{
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 30px;
+    padding: 1rem 0;
+}
+.footer .box-container .resource-tag p{
+    font-size: 16px;
+    color: rgba(1, 0, 29, 0.6);
+    font-style: normal;
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width:1200px){
+   
+    html{
+        font-size: 55%;
+    }
+    
+}
+@media (max-width:991px){
+   
+    section{
+        padding:0.3%;
+        padding-top: 7.5rem;
+    }
+    
+}
+@media (max-width:768px){
+
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+    header .navbar1{
+        position: absolute;
+        top: 100%; left: 0;
+        width: 100%;
+        background: white;
+        padding:1rem 2rem;
+        border-top: .1rem solid rgba(0,0,0,0.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0;
+        width: 100%;
+        background: white;
+        padding:1rem 2rem;
+        border-top: .1rem solid rgba(0,0,0,0.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .2s linear;
+    }
+    header .navbar1 a{
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+    header .navbar a{
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+    header input:checked ~ .navbar1{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    header input:checked ~ .navbar{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    header input:checked ~ label::before{
+        content:'\f00d';
+    }
+    .product{
+        flex-flow: column-reverse;
+    }
+    .product .lanid img{
+        width: 100%;
+    }
+    .product .trial-book h2{
+        font-size: 3.6rem;
+    }
+    .product .trial-book p{
+        font-size: 1.5rem;
+    }
+    .companies p{
+        font-size: 1.5rem;
+    }
+    .company-logos{
+        width: 80%;
+        flex-flow: wrap; 
+        height: 67px;
+    }
+    .box ul{
+        display: block;
+    }
+    .box ul .herobtn{   
+    }
+    .manage-team{
+        flex-flow: column-reverse;
+    }    
+    .manage-team .activities-pic img{
+        width: 100%;
+    }
+    .manage-team .team-activities h1{
+        font-size: 3.6rem;
+    }
+    .manage-team .team-activities p{
+        font-size: 1.5rem;
+    }
+    .frame-place{
+        flex-flow: column;
+    }
+    .frame-place .frame-pic img{
+        width: 100%;
+    }
+    .frame-place .team-speed h1{
+        font-size: 3.6rem;
+    }
+    .frame-place .team-speed p{
+        font-size: 1.5rem;
+    }
+    .autotask{
+        flex-flow: column-reverse;
+    }
+    .autotask .task-pic img{
+        width: 100%;
+    }
+    .autotask .task-line h1{
+        font-size: 3.6rem;
+    }
+    .autotask .task-line p{
+        font-size: 1.5rem;
+    }
+    .tools h1{
+        font-size: 2.0rem;
+    }
+    .icons1{
+        width: -50%;
+    }
+    .report{
+        flex-flow: column;
+    }
+    .report .report-pic img{
+        width: 100%;
+    }
+    .report .time-report h1{
+        font-size: 3.6rem;
+    }
+    .report .time-report p{
+        font-size: 1.5rem;
+    }
+    .management{
+        flex-flow: column-reverse;
+    }
+    .management .img-management img{
+        width: 100%;
+    }
+    .management .lead-management h1{
+        font-size: 3.6rem;
+    }
+    .management .lead-management p{
+        font-size: 1.5rem;
+    }
+    .support{
+        flex-flow: wrap;
+    }
+    .support .chat img{
+        width: 20%;
+        display: flex;
+    }
+    .support .chat p{
+        font-size: 1.5rem;
+        display: flex;
+    }
+    .support .elipse img{
+        width: 50%;
+    }
+    .support .customer h1{
+        font-size: 3.6rem;
+    }
+    .support .customer p{
+        font-size: 1.5rem;
+    }
+    .workspace{
+        flex-flow: column;
+    }
+    .workspace .work-free h1{
+        font-size: 3.6rem;
+    }
+    .workspace .work-free p{
+        font-size: 1.5rem;
+    }
+    .open{
+        flex-flow: column;
+    }
+    .open .logo-dwn img{
+        width: 100%;
+    }
+    .footer .box-container{
+        width: 100%;
+        display: block;
+        margin-left: 8%;
+    }
+    .footer .box-container .solution h1{
+        font-size: 3.6rem;
+    }
+    .footer .box-container .solution p{
+        font-size: 1.9rem;
+    }
+    .footer .box-container .solution .get p{
+        font-size: 1.9rem;
+    }
+    .footer .box-container .solution .numb p{
+        font-size: 1.9rem;
+    }
+    .footer .box-container .product-tag{
+        margin-left: 8%;
+    }
+    .footer .box-container .product-tag h1{
+        font-size: 3.6rem;
+        padding-top: 40px;
+    }
+    .footer .box-container .product-tag p{
+        font-size: 1.9rem;
+    }
+    .footer .box-container .company-tag{
+        margin-left: 8%;
+    }
+    .footer .box-container .company-tag h1{
+        font-size: 3.6rem;
+        padding-top: 40px;
+    }
+    .footer .box-container .company-tag p{
+        font-size: 1.9rem;
+    }
+    .footer .box-container .burner-tag{
+        margin-left: 8%;
+    }
+    .footer .box-container .burner-tag h1{
+        font-size: 3.6rem;
+        padding-top: 40px;
+    }
+    .footer .box-container .burner-tag p{
+        font-size: 1.9rem;
+    }
+    .footer .box-container .resource-tag{
+        margin-left: 8%;
+    }
+    .footer .box-container .resource-tag h1{
+        font-size: 3.6rem;
+        padding-top: 40px;
+    }
+    .footer .box-container .resource-tag p{
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width:520px){
+
+    html{
+        font-size: 50%;
+    }
+    .icons{
+        width: 250px;
+        height: 47px;
+        background-size: 250px 47px;
+        flex-flow: wrap;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+}
