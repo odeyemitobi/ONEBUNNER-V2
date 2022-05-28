@@ -175,6 +175,7 @@ header label {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .company-logos img {
@@ -325,6 +326,7 @@ header label {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .icons img{
@@ -410,7 +412,6 @@ header label {
   color: rgba(69, 69, 69, 0.8);
   font-style: normal;
   font-weight: 400;
-  line-height: 32px;
   padding-top: 10px;
   padding-bottom: 20px;
 }
@@ -518,7 +519,6 @@ header label {
 
 .footer .box-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -732,6 +732,20 @@ header label {
   }
 }
 
+@media (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+
+
 /* media queries */
 @media (max-width: 768px) {
   header .left-nav {
@@ -747,7 +761,7 @@ header label {
   .product .trial-book p {
     font-size: 1.5rem;
     width: 100%;
-    margin: 1rem 0;
+  
   }
 
   .hero-btn-2 {
@@ -758,6 +772,8 @@ header label {
   .company-logos img {
     height: 40px;
   }
+  
+  
 }
 
 @media (max-width: 1200px) {
@@ -836,166 +852,218 @@ header label {
   }
   
   .box ul {
-    display: block;
+    width: 100%;
   }
   
   .manage-team {
-    flex-flow: column-reverse;
+    flex-flow: inherit;
   }
+
   .manage-team .activities-pic img {
-    width: 100%;
+    width: 80%;
   }
+
   .manage-team .team-activities h1 {
-    font-size: 3.6rem;
+    width: 100%;
+    font-size: 2rem;
   }
+
   .manage-team .team-activities p {
     font-size: 1.5rem;
   }
+
   .frame-place {
-    flex-flow: column;
+    width: 100%;
   }
+
   .frame-place .frame-pic img {
-    width: 100%;
+    width: 80%;
   }
+
   .frame-place .team-speed h1 {
-    font-size: 3.6rem;
-  }
-  .frame-place .team-speed p {
-    font-size: 1.5rem;
-  }
-  .autotask {
-    flex-flow: column-reverse;
-  }
-  .autotask .task-pic img {
     width: 100%;
+    font-size: 2rem;
   }
+
+  .frame-place .team-speed p {
+    font-size: 1.3rem;
+  }
+
+  .autotask {
+    flex-flow:row;
+  }
+
+  .autotask .task-pic img {
+    width: 80%;
+  }
+
   .autotask .task-line h1 {
-    font-size: 3.6rem;
+    font-size: 2rem;
   }
+
   .autotask .task-line p {
     font-size: 1.5rem;
   }
+
   .tools h1 {
     font-size: 2rem;
   }
-  .icons1 {
-    width: -50%;
+
+  .icons img {
+    height: 40px;
   }
+
   .report {
-    flex-flow: column;
+    flex-flow: row;
   }
+
   .report .report-pic img {
-    width: 100%;
+    width: 80%;
   }
+  
   .report .time-report h1 {
-    font-size: 3.6rem;
+    font-size: 2rem;
   }
+
   .report .time-report p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
+
   .management {
-    flex-flow: column-reverse;
+    flex-flow: row;
   }
+
   .management .img-management img {
     width: 100%;
   }
+
   .management .lead-management h1 {
-    font-size: 3.6rem;
+    font-size: 2rem;
   }
+
   .management .lead-management p {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
+
   .support {
-    flex-flow: wrap;
+    width: 100%;
   }
+
   .support .chat img {
-    width: 20%;
+    height: 30px;
     display: flex;
   }
+
   .support .chat p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: flex;
   }
+
   .support .elipse img {
-    width: 50%;
+    width: 100%;
+    height: 200px;
   }
+
   .support .customer h1 {
-    font-size: 3.6rem;
+    font-size: 2rem;
   }
+
   .support .customer p {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
+
   .workspace {
     flex-flow: column;
   }
+
   .workspace .work-free h1 {
     font-size: 3.6rem;
   }
+
   .workspace .work-free p {
     font-size: 1.5rem;
   }
+
   .open {
-    flex-flow: column;
+    flex-flow: wrap;
   }
+
   .open .logo-dwn img {
     width: 100%;
   }
+
   .footer .box-container {
     width: 100%;
-    display: block;
-    margin-left: 8%;
+    display: flex;
+    flex-flow: wrap;
   }
+
   .footer .box-container .solution h1 {
-    font-size: 3.6rem;
+    font-size: 2rem;
   }
+
   .footer .box-container .solution p {
-    font-size: 1.9rem;
+    font-size: 1.3rem;
   }
+
   .footer .box-container .solution .get p {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
+
   .footer .box-container .solution .numb p {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
+
   .footer .box-container .product-tag {
-    margin-left: 8%;
+    width: 100%;
   }
+
   .footer .box-container .product-tag h1 {
-    font-size: 3.6rem;
+    font-size: 2rem;
     padding-top: 40px;
   }
+
   .footer .box-container .product-tag p {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
+
   .footer .box-container .company-tag {
-    margin-left: 8%;
+    width:100%;
   }
+
   .footer .box-container .company-tag h1 {
-    font-size: 3.6rem;
+    font-size: 2rem;
     padding-top: 40px;
   }
+
   .footer .box-container .company-tag p {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
+
   .footer .box-container .burner-tag {
-    margin-left: 8%;
+    width: 100%;
   }
+
   .footer .box-container .burner-tag h1 {
-    font-size: 3.6rem;
+    font-size: 2rem;
     padding-top: 40px;
   }
+
   .footer .box-container .burner-tag p {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
+
   .footer .box-container .resource-tag {
-    margin-left: 8%;
+    width: 100%;
   }
+
   .footer .box-container .resource-tag h1 {
-    font-size: 3.6rem;
+    font-size: 2rem;
     padding-top: 40px;
   }
+  
   .footer .box-container .resource-tag p {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -1014,5 +1082,55 @@ header label {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  html{
+    font-size: 50%;
+  }
+
+  .box ul{
+    width: 100%;
+    display: block;
+  }
+
+  .icons .icons1 img {
+    display: flex;
+  }
+}
+
+@media (max-width: 375px) {
+  html{
+    font-size: 50%;
+  }
+
+  .product  {
+    flex-flow: column-reverse;
+    width: 100%;
+  }
+
+
+  .product .trial-book {
+    width: 50%;
+  }
+
+  .product .trial-book h2 {
+    width:100%;
+    font-size: 0.9rem;
+  }
+
+  .product .trial-book p {
+    width:100%;
+    font-size: 0.7rem;
+  }
+
+  .product .lanid {
+    width: 50%;
+  }
+
+
+  .product .lanid img{
+    height: 100px;
   }
 }
